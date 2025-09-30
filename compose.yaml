@@ -1,0 +1,7 @@
+services:
+  server:
+    build:
+      context: .
+      target: final
+    ports:
+      - "${HOST_APP_PORT}:${CONTAINER_APP_PORT}"
